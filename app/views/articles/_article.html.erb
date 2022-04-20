@@ -1,0 +1,17 @@
+<div id="<%= dom_id article %>">
+  <p>
+    <strong>Title:</strong>
+    <%= article.title %>
+  </p>
+
+  <p>
+    <strong>Body:</strong>
+    <%= article.body %>
+  </p>
+
+  <p>
+    <strong>Image data:</strong>
+    <%= image_tag @article.image_url if @article.image %>
+  </p>
+
+</div>
